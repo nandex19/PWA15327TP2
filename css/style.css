@@ -18,10 +18,7 @@ body{
   background-color: transparent;
 }
 */
-.navbar-nav{
-  float: right;
 
-}
 .navbar-default{
  background-color: transparent;
 }
@@ -30,6 +27,12 @@ body{
   width: 35px;
   height: 35px;
 }
+
+.navbar-nav{
+  float: right;
+  font-size: 18px;
+}
+
 /*---------------------------homePage---------------------------*/
 .img1{
   width: 200px;
@@ -37,7 +40,7 @@ body{
 
 .container_home{
   background-color: transparent;
-  height: 100%;
+  height: 90%;
 }
 .container_home h1{
   font-size: 100px;
@@ -56,15 +59,38 @@ body{
   height: 90%;
 }
 
+.container_about .left{
+    border: 1px solid black;
+    height: 70%;
+    padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        margin-top: 50px;
+}
+
+.container_about .right{
+    border: 1px solid black;
+    height: 70%;
+    padding-left: 0px;
+    padding-right: 0px;
+            margin-top: 50px;
+}
+
 .container_about .left p{
-  margin-top: 6%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 100%;
+  margin-bottom: 5px;
 }
 
 /*--*/
 .container_about .right p{
-  margin-top: 6%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 100%;
+  margin-bottom: 5px;
 }
 
 .container_about .right img{
@@ -76,29 +102,398 @@ body{
 
 /*-------------------------bands---------------------------------*/
 .container_bandas{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  height: 90%;
 }
 
 .container_bandas .left
 {
+    border: 1px solid black;
     background-color: white;
-padding-top: 8%;
+    height: 100%;
+    padding-top: 2%;
 }
 .container_bandas .left p{
   font-size: 100%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
 }
 
-.container_bandas .right p{
-  margin-top: 10px;
-  font-size: 100%;
+.container_bandas .left img{
+  width: 45%;
+  height: 30%;
+  margin-left: 23%;
 }
-/*--*/
-.container_bandas .right img{
-  width: 50%;
-  height: 35%;
-}
+/*---------------------------right------------------------------*/
 .container_bandas .right
 {
+  border: 1px solid black;
   background-color: white;
-  padding-top: 8%;
+  height: 100%;
+  padding-top: 2%;
+}
+.container_bandPage .row{
+
+}
+.container_bandas .right p{
+  font-size: 100%;
+  padding-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+.container_bandas .right img{
+  width: 45%;
+  height: 30%;
+  margin-left: 23%;
+}
+
+/*----------------------------pagBand------------------*/
+.container_bandPage{
+  background-color: rgb(255, 255, 255);
+  height: 90%;
+}
+
+.container_bandPage .row{
+  padding-bottom: 2%;
+}
+
+.container_bandPage .row h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+.container_bandPage .row img{
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+.container_bandPage .coluna
+{
+    border: 1px solid black;
+    background-color: white;
+    height: 60%;
+    padding-top: 3%;
+}
+.container_bandPage .coluna p{
+  font-size: 100%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+
+.container_bandPage .coluna img{
+  width: 60%;
+  height: 60%;
+  margin-left: 21%;
+}
+
+/*--------------------------------contact--------------------*/
+.container_contact {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  clear: both;
+}
+
+.container_contact h1{
+  font-size: 80px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.container_contact .left p {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  padding-left: 15%;
+}
+
+.container_contact .left input{
+    margin-left: 5%;
+}
+.container_contact .left a {
+  background-color: rgb(44, 44, 48);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container_contact .left .btn {
+  margin-left: 15%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.container_contact .right {
+  float: right;
+}
+
+.container_contact .right p {
+  letter-spacing: 2px;
+  float: left;
+  width: 85%;
+  font-size: 16px;
+}
+.container_contact .right iframe{
+  margin-bottom: 30px;
+  width :75%;
+  height: 55%;
+  frameborder: 0;
+  float: left;
+}
+/*mediaQuery para 1366*/
+@media(max-width: 1366px){
+  .container_home h1{
+    font-size: 80px;
+  }
+
+  .container_home p{
+    font-size: 20px;
+  }
+  .container_home{
+    height: 89%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_about{
+    height: 89%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_bandas{
+    height: 89%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_contact{
+    height: 89%;
+  }
+
+  .container_bandPage{
+    height: 91%;
+  }
+
+  .container_bandPage .row img{
+    width: 35%;
+    height: 35%;
+    margin-left: 32%;
+  }
+
+  .container_bandPage .row h1{
+    font-size: 60px;
+  }
+
+  .container_bandPage .coluna{
+      height: 50%;
+  }
+
+  .container_bandPage .coluna p{
+    font-size: 100%;
+  }
+
+  .container_bandPage .coluna img{
+    width: 55%;
+    height: 55%;
+    margin-left: 21%;
+  }
+
+}
+
+@media(max-width:800px) {
+  .container_home{
+    height: 89%;
+  }
+  .container_home h1{
+    font-size: 60px;
+  }
+
+  .container_home p{
+    font-size: 20px;
+  }
+
+/*-------------------------------------------------------------------*/
+  .container_about{
+    height: 90%;
+  }
+
+  .container_about .left{
+    height: 42%;
+  }
+  .container_about .left p{
+    margin-top: 5px;
+    font-size: 80%;
+  }
+
+  /*--*/
+  .container_about .right{
+    height: 50%;
+  }
+  .container_about .right p{
+    font-size: 80%;
+  }
+
+  .container_about .right img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    width: 45%;
+    height: 50%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_bandas{
+    height: 102%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_bandPage{
+    height: 102%;
+  }
+
+  .container_bandPage .row h1{
+    font-size: 50px;
+  }
+
+  .container_bandPage .coluna img{
+    width: 30%;
+    height: 45%;
+    margin-left: 33%;
+  }
+/*-------------------------------------------------------------------*/
+.container_contact {
+  width: 100%;
+  height: 200%;
+  background-color: white;
+  clear: both;
+}
+
+.container_contact h1{
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+/*---------------------------------*/
+.container_contact .left p {
+  padding-left: 5%;
+}
+/*---------------------------------*/
+.container_contact .right {
+  float: left;
+}
+.container_contact .right iframe{
+  margin-bottom: 30px;
+  width :100%;
+  height: 50%;
+  frameborder: 0;
+  float: left;
+}
+
+}
+
+@media(max-width: 400px) {
+  .container_home{
+    height: 85%;
+  }
+  .container_home h1{
+    font-size: 50px;
+  }
+
+  .container_home p{
+    font-size: 18px;
+  }
+
+/*-------------------------------------------------------------------*/
+  .container_about{
+    height: 150%;
+  }
+
+  .container_about .left{
+    height: 42%;
+    padding-bottom: 105%;
+  }
+
+  /*--*/
+  .container_about .right{
+    height: 50%;
+  }
+  .container_about .right p{
+    font-size: 80%;
+  }
+
+  .container_about .right img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    width: 45%;
+    height: 50%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_bandas{
+    height: 120%;
+  }
+  .container_bandas .left
+  {
+      height: 90%;
+  }
+  .container_bandas .left img{
+    width: 40%;
+    height: 25%;
+    margin-left: 27%;
+  }
+  .container_bandas .right
+  {
+      height: 90%;
+  }
+  .container_bandas .right img{
+    width: 40%;
+    height: 25%;
+    margin-left: 27%;
+  }
+/*-------------------------------------------------------------------*/
+  .container_bandPage{
+    height: 102%;
+  }
+  .container_bandPage .row img{
+    width: 55%;
+    height: 45%;
+    margin-left: 22%;
+  }
+  .container_bandPage .row h1{
+    font-size: 40px;
+  }
+
+  .container_bandPage .coluna img{
+    width: 55%;
+    height: 45%;
+    margin-left: 22%;
+  }
+/*-------------------------------------------------------------------*/
+.container_contact {
+  width: 100%;
+  height: 200%;
+  background-color: white;
+  clear: both;
+}
+
+.container_contact h1{
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+/*---------------------------------*/
+.container_contact .left p {
+  padding-left: 5%;
+}
+/*---------------------------------*/
+.container_contact .right {
+  float: left;
+}
+.container_contact .right iframe{
+  margin-bottom: 30px;
+  width :100%;
+  height: 50%;
+  frameborder: 0;
+  float: left;
+}
+
 }
