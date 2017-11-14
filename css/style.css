@@ -5,33 +5,100 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+body{
+  background: transparent;
+}
 /*---------------------------navBar---------------------------*/
 .navbar-header img{
   margin-top: 10px;
 }
+
+/*
+#navbar.navbar-collapse{
+  background-color: transparent;
+}
+*/
 .navbar-nav{
   float: right;
-  border-bottom: 2px solid black;
+
 }
 .navbar-default{
  background-color: transparent;
+}
+
+.logo{
+  width: 35px;
+  height: 35px;
 }
 /*---------------------------homePage---------------------------*/
 .img1{
   width: 200px;
 }
-.logo{
-  width: 30px;
-}
-.container{
+
+.container_home{
   background-color: transparent;
+  height: 100%;
 }
-.container h1{
+.container_home h1{
   font-size: 100px;
   text-align: center;
+  color: white;
 }
 
-.container p{
+.container_home p{
   font-size: 35px;
   text-align: center;
+  color: white;
+}
+/*-------------------------about---------------------------------*/
+.container_about{
+  background-color: white;
+  height: 90%;
+}
+
+.container_about .left p{
+  margin-top: 6%;
+  font-size: 100%;
+}
+
+/*--*/
+.container_about .right p{
+  margin-top: 6%;
+  font-size: 100%;
+}
+
+.container_about .right img{
+    margin-top: 6%;
+  margin-left: 25%;
+  width: 50%;
+  height: 35%;
+}
+
+/*-------------------------bands---------------------------------*/
+.container_bandas{
+  background-color: white;
+}
+
+.container_bandas .left
+{
+    background-color: white;
+padding-top: 8%;
+}
+.container_bandas .left p{
+  font-size: 100%;
+}
+
+.container_bandas .right p{
+  margin-top: 10px;
+  font-size: 100%;
+}
+/*--*/
+.container_bandas .right img{
+  width: 50%;
+  height: 35%;
+}
+.container_bandas .right
+{
+  background-color: white;
+  padding-top: 8%;
 }
